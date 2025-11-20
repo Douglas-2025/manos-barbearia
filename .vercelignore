@@ -1,0 +1,10 @@
+node_modules
+.git
+.gitignore
+README.md
+GUIA_GOOGLE_OAUTH.md
+GUIA_BARBEIRO.md
+DOCUMENTACAO.md
+.env.local
+.env.production
+supabase/
