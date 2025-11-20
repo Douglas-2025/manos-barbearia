@@ -42,7 +42,7 @@ const Auth: React.FC = () => {
 
   const signOut = async () => {
     try {
-      await supabase.auth.signOut();
+      await supabase.auth.signOut({ scope: 'global' });
       setUser(null);
     } catch (error) {
       console.error('Erro ao sair', error);

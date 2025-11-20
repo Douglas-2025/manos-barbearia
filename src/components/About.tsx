@@ -1,24 +1,23 @@
-import React from 'react';
 import { Award, User, Clock, MapPin } from 'lucide-react';
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <section id="about" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="relative flex justify-center items-center">
-            {/* Efeito azul em glow atrás */}
+            {/* Efeito de brilho azul atrás da imagem */}
             <div className="absolute w-[99%] h-[105%] bg-blue-600 opacity-40 blur-[30px] rounded-3xl z-0" />
 
-            {/* Imagem principal */}
+            {/* Imagem principal com z-index maior para ficar na frente */}
             <img
               src="/img/LOGO2SEMFUNDO.jpg"
-              alt="Interior da Barbearia Mano's"
+              alt="Logo da Barbearia Mano's"
               loading="lazy"
               className="relative z-10 rounded-lg shadow-xl w-full max-w-xl h-auto lg:h-[650px] object-contain"
             />
 
-            {/* Bloco de anos de experiência */}
+            {/* Bloco de anos de experiência com z-index ainda maior */}
             <div className="absolute -bottom-6 -right-6 bg-blue-600 p-6 rounded-lg shadow-xl z-20 text-center">
               <p className="text-white text-4xl font-bold">2+</p>
               <p className="text-white font-medium">Anos de Experiência</p>
